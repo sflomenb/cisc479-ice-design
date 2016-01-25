@@ -1,0 +1,199 @@
+$em-spacing = 0.5em
+$p-width = 66%
+$p-mobile-width = 85%
+$max-p-width = 950px
+
+$center-text
+  text-align center
+  position relative
+  
+$full-width
+  width 100%
+  
+$push-down
+  margin-top 250px
+  
+$pos-rel
+  position relative
+  
+$pos-abs
+  position absolute
+  
+$block
+  display block
+  
+$remove-marg-bot
+  margin-bottom 0
+  
+$remove-marg-top
+  margin-top 0
+
+$make-flex
+  display flex
+
+$space-around
+  justify-content space-around
+
+$space-between
+  justify-content space-between
+  
+$flex-stretch
+  align-content stretch
+  
+$2x
+  flex-grow 2
+  
+$wrap-flex
+  flex-wrap wrap
+  
+$200-px-pad-btm
+  padding-bottom 200px
+  
+$some-padding
+  padding-bottom 22.624px
+  
+$more-padding
+  padding-top 16px//11.315px
+  
+$1em-marg
+  margin-top 1em
+  margin-bottom 1em
+
+$1em-marg-auto
+  margin 1em auto 1em
+  
+$1em-top-marg
+  margin-top 1em
+
+$1em-pad
+  padding-top 1em
+  padding-bottom 1em
+  
+$1em-top-pad
+  padding-top 1em
+
+$1em-bot-pad
+  padding-bottom 1em
+
+$no-marg
+  margin 0
+
+$no-top-marg
+  margin-top 0
+  
+$no-bot-marg
+  margin-bottom 0
+  
+$marg-top
+  margin-top $em-spacing
+  
+$marg-center
+  background-color yellow
+  margin-left auto
+  margin-right auto
+
+$pad-bot
+  padding-bottom $em-spacing
+
+$float-left
+  float left
+
+$clear-float
+  clear both
+  
+
+
+h1
+  @extends $center-text
+  @extends $pos-rel
+  @extends $remove-marg-bot
+  @extends $200-px-pad-btm
+  
+  
+h2
+  @extends $block
+  @extends $remove-marg-top
+  @extends $some-padding
+  @extends $remove-marg-bot
+  
+h3
+  @extends $remove-marg-top
+  @extends $more-padding
+  
+h1, h1::before, h2, h2::before
+  @extends $block
+
+.supporting
+  @extends $float-left
+
+aside
+  @extends $clear-float
+  @extends $pad-bot
+
+aside .wrapper
+  @extends $make-flex
+  @extends $space-around
+  @extends $wrap-flex
+  
+p
+  @extends $1em-marg-auto
+  width $p-width
+  // max-width $max-p-width
+
+p:last-of-type
+  @extends $no-top-marg
+  @extends $no-bot-marg
+  
+p:first-of-type
+  @extends $no-top-marg
+  
+.summary p:last-of-type
+  @extends $pad-bot
+  
+footer
+  @extends $make-flex
+  @extends $space-around
+  @extends $marg-top
+  @extends $wrap-flex
+  padding $em-spacing
+  
+h2, h3
+  margin-left 2em
+  
+aside h3
+  margin-left 0
+  
+@media screen and (max-width: 780px) and (orientation: portrait)
+  h2, h3
+    // background-color red
+    // @extends $marg-center
+    text-align center
+    margin-left auto
+    margin-right auto
+    
+  p
+    width $p-mobile-width
+
+@media screen and (min-width: 982px)
+  h2
+    // background-color red
+    // @extends $marg-center
+    margin-left 4em
+  h3
+    // @extends $marg-center
+    margin-left 5.8em
+    
+
+// footer
+//   display flex !important
+//   justify-content space-around
+//   background-color red
+  
+// .summary p:last-of-type
+//   @extends $1em-top-marg
+
+
+// p:not(last-of-type)
+  
+// p:last-of-type
+//   background-color red

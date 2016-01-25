@@ -1,0 +1,284 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-family: 'Iceland', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Iceberg', cursive;
+  margin: 0.35371361076080343em 0 0.5001510456157761em;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 3.997584364815999em;
+}
+h2 {
+  font-size: 2.8271459439999993em;
+}
+h3,
+footer {
+  font-size: 1.9993959999999997em;
+}
+h4,
+p {
+  font-size: 1.414em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.7072135785007072em;
+}
+small {
+  font-size: 0.7072135785007072em;
+}
+*::before {
+  font-size: 0.5001510456157761em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #1466ab;
+}
+p {
+  color: #09497e;
+}
+a {
+  color: #30c589;
+}
+header {
+  background-color: rgba(20,102,171,0.8);
+}
+.summary,
+.preamble {
+  background-color: rgba(20,102,171,0.8);
+}
+.preamble,
+.supporting {
+  background-color: rgba(255,250,250,0.8);
+}
+.intro h2,
+.summary p {
+  color: #fffffa;
+}
+footer {
+  background-color: #053054;
+}
+footer a {
+  color: #fffffa;
+}
+aside {
+  background-color: #0d0b5b;
+}
+aside li {
+  color: #808080;
+}
+body,
+h1 {
+  background: url("http://netdna.webdesignerdepot.com/uploads/2013/11/picjumbo.com_DSC_3274.jpg");
+  background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  position: relative;
+}
+h1 {
+  position: relative;
+}
+h2,
+h1,
+h1::before,
+h2::before {
+  display: block;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
+aside .wrapper,
+footer {
+  display: flex;
+}
+aside .wrapper,
+footer {
+  justify-content: space-around;
+}
+aside .wrapper,
+footer {
+  flex-wrap: wrap;
+}
+h1 {
+  padding-bottom: 200px;
+}
+h2 {
+  padding-bottom: 22.624px;
+}
+h3 {
+  padding-top: 16px;
+}
+p {
+  margin: 1em auto 1em;
+}
+p:last-of-type,
+p:first-of-type {
+  margin-top: 0;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+footer {
+  margin-top: 0.5em;
+}
+aside,
+.summary p:last-of-type {
+  padding-bottom: 0.5em;
+}
+.supporting {
+  float: left;
+}
+aside {
+  clear: both;
+}
+p {
+  width: 66%;
+}
+footer {
+  padding: 0.5em;
+}
+h2,
+h3 {
+  margin-left: 2em;
+}
+aside h3 {
+  margin-left: 0;
+}
+@media screen and (max-width: 780px) and (orientation: portrait) {
+  h2,
+  h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 982px) {
+  h2 {
+    margin-left: 4em;
+  }
+  h3 {
+    margin-left: 5.8em;
+  }
+}
+h1::before {
+  content: "You've reached the top of the";
+}
+h2::before {
+  content: "Do you witness ";
+}
+h2::after {
+  content: "?";
+}

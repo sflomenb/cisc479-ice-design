@@ -1,0 +1,38 @@
+$font-ratio = 1.414em
+$font-family = 'Iceland', cursive
+$title-font-family = 'Iceberg', cursive
+$line-height = 1.4
+
+body
+    font-family $font-family
+    
+h1, h2, h3, h4, h5, h6
+    font-family $title-font-family
+    margin ($font-ratio ** -3) 0 ($font-ratio ** -2)
+    
+a
+    text-decoration none
+
+h1
+    font-size $font-ratio ** 4
+    
+h2
+    font-size $font-ratio ** 3 
+    
+h3, footer
+    font-size $font-ratio ** 2
+    
+h4,p
+    font-size $font-ratio ** 1
+    
+h5
+    font-size $font-ratio ** 0
+    
+h6
+    font-size $font-ratio ** -1
+
+small
+    font-size $font-ratio ** -1
+    
+*::before
+    font-size $font-ratio ** -2

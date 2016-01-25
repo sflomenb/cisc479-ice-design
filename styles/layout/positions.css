@@ -1,0 +1,88 @@
+h1 {
+  text-align: center;
+  position: relative;
+}
+h1 {
+  position: relative;
+}
+h2,
+h1,
+h1::before,
+h2::before,
+p {
+  display: block;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
+aside .wrapper,
+footer {
+  display: flex;
+}
+aside .wrapper,
+footer {
+  justify-content: space-around;
+}
+aside .wrapper {
+  flex-wrap: wrap;
+}
+h1 {
+  padding-bottom: 200px;
+}
+h2 {
+  padding-bottom: 22.624px;
+}
+h3 {
+  padding-top: 16px;
+}
+p {
+  margin: 1em auto 1em;
+}
+p:last-of-type,
+p:first-of-type {
+  margin-top: 0;
+}
+p:last-of-type {
+  margin-bottom: 0;
+}
+footer {
+  margin-top: 0.5em;
+}
+aside,
+.summary p:last-of-type {
+  padding-bottom: 0.5em;
+}
+.supporting {
+  float: left;
+}
+aside {
+  clear: both;
+}
+p {
+  width: 66%;
+}
+footer {
+  padding: 0.5em;
+}
+h2,
+h3 {
+  margin-left: 2em;
+}
+aside h3 {
+  margin-left: 0;
+}
+@media screen and (max-width: 780px) and (orientation: portrait) {
+  h2,
+  h3 {
+    background-color: #f00;
+  }
+  h2 text-align center,
+  h3 text-align center {
+    margin-left: auto;
+  }
+}
